@@ -204,47 +204,52 @@ export default function Projects() {
   </div>
 </motion.div>
 
-          {/* Card 4 - Naoson */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
-          >
-            <div className="h-36 bg-white border-b border-gray-100 flex items-center justify-between px-6">
-              <div>
-                <p className="text-3xl font-black text-purple-700 tracking-tight">Naoson</p>
-                <p className="text-3xl font-black text-gray-900 tracking-tight">Collection</p>
-              </div>
-              <div className="w-16 h-16 rounded-2xl bg-purple-50 border border-purple-100 flex items-center justify-center">
-                <span className="text-3xl">🏪</span>
-              </div>
-              <div className="absolute top-4 right-4 bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full font-medium">Live</div>
-            </div>
-            <div className="p-5 space-y-3">
-              <h3 className="text-lg font-bold text-gray-900">Naoson Collection — Business System</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
-                A smart business management system for Naoson Collection — a real client. Handles inventory, sales tracking, and daily operations efficiently.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">JavaScript</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">Database</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">Render</span>
-              </div>
-              <motion.a
-                href="https://naoson.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.97 }}
-                className="inline-flex items-center gap-2 bg-purple-700 text-white text-sm font-medium px-4 py-2 rounded-full"
-              >
-                <ExternalLink size={14} />
-                Live Demo
-              </motion.a>
-            </div>
-          </motion.div>
+{/* Card 4 - Naoson */}
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6, delay: 0.4 }}
+  className="relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
+>
+  <div className="h-36 border-b border-gray-100 flex items-center justify-between px-6"
+    style={{ background: 'linear-gradient(135deg, #7a5200, #b8860b)' }}>
+    <div>
+      <p className="text-3xl font-black text-white tracking-tight">Naoson's</p>
+      <p className="text-3xl font-black text-yellow-200 tracking-tight">Collections</p>
+    </div>
+    <div className="w-16 h-16 rounded-2xl bg-white/20 border border-white/30 flex items-center justify-center">
+      <span className="text-3xl">🏺</span>
+    </div>
+    <div className="absolute top-4 right-4 bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full font-medium">Live</div>
+  </div>
+  <div className="p-5 space-y-3">
+    <h3 className="text-lg font-bold text-gray-900">Naoson's Collections — Mfumo wa Duka</h3>
+    <p className="text-gray-500 text-sm leading-relaxed">
+      A full-stack POS and business management system for Naoson's Collections — a real client in Zanzibar.
+      Features inventory management, sales tracking, profit reports, stock alerts, receipt printing, Excel/PDF export, backup & restore, and secure login.
+    </p>
+    <div className="flex flex-wrap gap-2">
+      <span className="text-xs px-3 py-1 rounded-full border" style={{ background: '#fff3dc', color: '#b8860b', borderColor: '#e8d5a3' }}>Next.js 16</span>
+      <span className="text-xs px-3 py-1 rounded-full border" style={{ background: '#fff3dc', color: '#b8860b', borderColor: '#e8d5a3' }}>Tailwind CSS</span>
+      <span className="text-xs px-3 py-1 rounded-full border" style={{ background: '#fff3dc', color: '#b8860b', borderColor: '#e8d5a3' }}>SQLite/Turso</span>
+      <span className="text-xs px-3 py-1 rounded-full border" style={{ background: '#fff3dc', color: '#b8860b', borderColor: '#e8d5a3' }}>Vercel</span>
+      <span className="text-xs px-3 py-1 rounded-full border" style={{ background: '#fff3dc', color: '#b8860b', borderColor: '#e8d5a3' }}>JWT Auth</span>
+    </div>
+    <motion.a
+      href="https://naoson.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.97 }}
+      className="inline-flex items-center gap-2 text-white text-sm font-medium px-4 py-2 rounded-full"
+      style={{ background: 'linear-gradient(135deg, #7a5200, #b8860b)' }}
+    >
+      <ExternalLink size={14} />
+      Live Demo
+    </motion.a>
+  </div>
+</motion.div>
 
           {/* More Coming */}
           <motion.div
