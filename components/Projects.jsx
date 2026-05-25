@@ -154,6 +154,56 @@ export default function Projects() {
             </div>
           </motion.div>
 
+
+          {/* Card 5 - Keysha Kids */}
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6, delay: 0.4 }}
+  className="relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
+>
+  <div className="h-36 border-b border-gray-100 flex items-center justify-between px-6"
+    style={{ background: 'linear-gradient(135deg, #2D0060, #E91E8C)' }}>
+    <div>
+      <p className="text-3xl font-black text-white tracking-tight">Keysha</p>
+      <p className="text-3xl font-black text-pink-200 tracking-tight">Kids</p>
+    </div>
+    <div className="w-16 h-16 rounded-2xl bg-white/20 border border-white/30 flex items-center justify-center">
+      <span className="text-3xl">👗</span>
+    </div>
+    <div className="absolute top-4 right-4 bg-pink-100 text-pink-700 text-xs px-3 py-1 rounded-full font-medium">Live</div>
+  </div>
+  <div className="p-5 space-y-3">
+    <h3 className="text-lg font-bold text-gray-900">Keysha Kids Collection — Business System</h3>
+    <p className="text-gray-500 text-sm leading-relaxed">
+      A full-stack business management system for Keysha Kids Collection, Zanzibar. 
+      Features POS, inventory, debt tracking, sales reports, customer management, 
+      automated backups and role-based access control.
+    </p>
+    <div className="flex flex-wrap gap-2">
+      <span className="text-xs bg-pink-50 text-pink-700 border border-pink-100 px-3 py-1 rounded-full">React 18</span>
+      <span className="text-xs bg-pink-50 text-pink-700 border border-pink-100 px-3 py-1 rounded-full">Node.js</span>
+      <span className="text-xs bg-pink-50 text-pink-700 border border-pink-100 px-3 py-1 rounded-full">PostgreSQL</span>
+      <span className="text-xs bg-pink-50 text-pink-700 border border-pink-100 px-3 py-1 rounded-full">Prisma ORM</span>
+      <span className="text-xs bg-pink-50 text-pink-700 border border-pink-100 px-3 py-1 rounded-full">Railway</span>
+      <span className="text-xs bg-pink-50 text-pink-700 border border-pink-100 px-3 py-1 rounded-full">Vercel</span>
+    </div>
+    <motion.a
+      href="https://keyshakids.vercel.app"
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.97 }}
+      className="inline-flex items-center gap-2 text-white text-sm font-medium px-4 py-2 rounded-full"
+      style={{ background: 'linear-gradient(135deg, #7B2FBE, #E91E8C)' }}
+    >
+      <ExternalLink size={14} />
+      Live Demo
+    </motion.a>
+  </div>
+</motion.div>
+
           {/* Card 4 - Naoson */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -183,7 +233,7 @@ export default function Projects() {
                 <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">Render</span>
               </div>
               <motion.a
-                href="https://naoson.onrender.com/"
+                href="https://naoson.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
