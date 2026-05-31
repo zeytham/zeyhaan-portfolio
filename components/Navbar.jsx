@@ -46,6 +46,14 @@ export default function Navbar() {
             Projects
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300" />
           </motion.a>
+          <motion.a href="#team" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.55 }} className="text-sm text-gray-600 hover:text-green-700 font-medium transition-colors duration-200 relative group">
+            Team
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300" />
+          </motion.a>
+          <motion.a href="#certificates" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.58 }} className="text-sm text-gray-600 hover:text-green-700 font-medium transition-colors duration-200 relative group">
+            Certificates
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300" />
+          </motion.a>
           <motion.a href="#contact" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }} className="text-sm text-gray-600 hover:text-green-700 font-medium transition-colors duration-200 relative group">
             Contact
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300" />
@@ -58,7 +66,7 @@ export default function Navbar() {
           whileTap={{ scale: 0.97 }}
           className="hidden md:inline-flex bg-green-700 hover:bg-green-800 text-white text-sm font-medium px-5 py-2.5 rounded-full transition-colors duration-200"
         >
-          Hire Me
+          Hire Us
         </motion.a>
 
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-gray-700 hover:text-green-700 transition-colors">
@@ -79,8 +87,10 @@ export default function Navbar() {
               <a href="#about" onClick={() => setIsOpen(false)} className="text-sm text-gray-700 hover:text-green-700 font-medium transition-colors py-1">About</a>
               <a href="#services" onClick={() => setIsOpen(false)} className="text-sm text-gray-700 hover:text-green-700 font-medium transition-colors py-1">Services</a>
               <a href="#projects" onClick={() => setIsOpen(false)} className="text-sm text-gray-700 hover:text-green-700 font-medium transition-colors py-1">Projects</a>
+              <a href="#team" onClick={() => setIsOpen(false)} className="text-sm text-gray-700 hover:text-green-700 font-medium transition-colors py-1">Team</a>
+              <a href="#certificates" onClick={() => setIsOpen(false)} className="text-sm text-gray-700 hover:text-green-700 font-medium transition-colors py-1">Certificates</a>
               <a href="#contact" onClick={() => setIsOpen(false)} className="text-sm text-gray-700 hover:text-green-700 font-medium transition-colors py-1">Contact</a>
-              <a href="#contact" onClick={() => setIsOpen(false)} className="inline-block bg-green-700 text-white text-sm px-5 py-2.5 rounded-full text-center">Hire Me</a>
+              <a href="#contact" onClick={() => setIsOpen(false)} className="inline-block bg-green-700 text-white text-sm px-5 py-2.5 rounded-full text-center">Hire Us</a>
             </div>
           </motion.div>
         )}

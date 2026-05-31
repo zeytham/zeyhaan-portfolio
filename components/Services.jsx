@@ -2,33 +2,6 @@
 import { motion } from "framer-motion";
 import { Globe, Settings, BarChart2, FileText } from "lucide-react";
 
-const services = [
-  {
-    icon: Globe,
-    title: "Web Development",
-    description: "Designing and developing modern, responsive websites and web applications tailored to your needs. From landing pages to full-stack platforms.",
-    stack: ["Next.js", "HTML5", "CSS3", "JavaScript", "Supabase", "Firebase"],
-  },
-  {
-    icon: Settings,
-    title: "Systems Development",
-    description: "Building smart, efficient business systems — including ordering platforms, inventory systems, and custom dashboards for real-world operations.",
-    stack: ["Python", "C", "C++", "Database Design", "Vercel"],
-  },
-  {
-    icon: BarChart2,
-    title: "Data Analysis",
-    description: "Processing, visualizing, and interpreting data to support informed decision-making using industry-standard tools and programming languages.",
-    stack: ["MATLAB", "Python", "Data Visualization", "Statistics"],
-  },
-  {
-    icon: FileText,
-    title: "Technical Documentation",
-    description: "Producing clean, well-structured academic and professional documents — reports, research papers, assignments, and presentations.",
-    stack: ["LaTeX", "Microsoft Office", "Canva", "Technical Writing"],
-  },
-];
-
 export default function Services() {
   return (
     <section id="services" className="py-24 bg-gray-50">
@@ -42,11 +15,11 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-xs text-green-600 tracking-widest uppercase font-medium mb-2">What I Offer</p>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">My Services</h2>
+          <p className="text-xs text-green-600 tracking-widest uppercase font-medium mb-2">What We Offer</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
           <div className="w-16 h-1 bg-green-600 mx-auto rounded-full" />
           <p className="text-gray-500 mt-6 max-w-xl mx-auto leading-relaxed">
-            I provide professional tech services built on precision, clarity, and real-world impact — guided by the motto: Innovate, Develop, Grow.
+            We provide professional tech services built on precision, clarity, and real-world impact — guided by our motto: Innovate, Develop, Grow.
           </p>
         </motion.div>
 
@@ -64,7 +37,7 @@ export default function Services() {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Web Development</h3>
             <p className="text-gray-500 leading-relaxed mb-5 text-sm">
-              Designing and developing modern, responsive websites and web applications tailored to your needs. From landing pages to full-stack platforms.
+              We design and develop modern, responsive websites and web applications tailored to your needs — from landing pages to full-stack platforms.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">Next.js</span>
@@ -88,7 +61,7 @@ export default function Services() {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Systems Development</h3>
             <p className="text-gray-500 leading-relaxed mb-5 text-sm">
-              Building smart, efficient business systems — including ordering platforms, inventory systems, and custom dashboards for real-world operations.
+              We build smart, efficient business systems — including ordering platforms, inventory systems, and custom dashboards designed for real-world operations.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">Python</span>
@@ -110,7 +83,7 @@ export default function Services() {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Data Analysis</h3>
             <p className="text-gray-500 leading-relaxed mb-5 text-sm">
-              Processing, visualizing, and interpreting data to support informed decision-making using industry-standard tools and programming languages.
+              We process, visualize, and interpret data to support informed decision-making — using industry-standard tools and programming languages.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">MATLAB</span>
@@ -132,7 +105,7 @@ export default function Services() {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Technical Documentation</h3>
             <p className="text-gray-500 leading-relaxed mb-5 text-sm">
-              Producing clean, well-structured academic and professional documents — reports, research papers, assignments, and presentations.
+              We produce clean, well-structured academic and professional documents — reports, research papers, assignments, and presentations.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">LaTeX</span>

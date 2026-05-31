@@ -1,7 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
-import { ArrowDown, Download, ExternalLink, MapPin } from "lucide-react";
+import { ArrowDown, ExternalLink, MapPin, Users } from "lucide-react";
 import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-green-50 to-white overflow-hidden pt-20">
@@ -21,7 +22,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 text-xs font-medium px-4 py-2 rounded-full"
           >
             <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-            Available for Freelance and Collaboration
+            Open for Projects and Collaboration
           </motion.div>
 
           <motion.div
@@ -30,13 +31,13 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
           >
             <p className="text-sm text-gray-400 tracking-widest uppercase mb-2 font-medium">
-              Hello, I am
+              Welcome to
             </p>
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Zeyana
-              <span className="text-green-700"> Thabit</span>
+              Zeyhaan
+              <span className="text-green-700"> Tech</span>
               <br />
-              Juma
+              Solution
             </h1>
           </motion.div>
 
@@ -47,7 +48,7 @@ export default function Hero() {
             className="space-y-2"
           >
             <p className="text-lg text-gray-600 font-medium">
-              Web Developer • Systems Engineer • Data Analyst
+              Web Development • Systems Engineering • Data Analysis
             </p>
             <p className="text-base text-gray-500 italic">
               Building Smart Systems for a Digital Future
@@ -69,28 +70,26 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
             className="flex flex-wrap gap-4"
-            >
+          >
             <motion.a
-                href="#projects"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.97 }}
-                className="inline-flex items-center gap-2 bg-green-700 text-white font-medium px-6 py-3 rounded-full transition-all duration-300"
+              href="#projects"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-flex items-center gap-2 bg-green-700 text-white font-medium px-6 py-3 rounded-full transition-all duration-300"
             >
-                <ExternalLink size={16} />
-                View My Work
+              <ExternalLink size={16} />
+              View Our Work
             </motion.a>
             <motion.a
-              href="/ZEYANA_THABIT_JUMA.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-2 border border-green-700 text-green-700 font-medium px-6 py-3 rounded-full transition-all duration-300"
             >
-              <Download size={16} />
-              Download CV
+              <Users size={16} />
+              Work With Us
             </motion.a>
-            </motion.div>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0 }}
@@ -113,34 +112,36 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="space-y-6"
         >
+          {/* Team Photos */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
+            <div className="relative w-52 h-52">
               <div className="w-52 h-52 rounded-full overflow-hidden shadow-2xl border-4 border-green-100">
                 <Image
-                    src="/ZTJ.jpg"
-                    alt="Zeyana Thabit Juma"
-                    width={208}
-                    height={208}
-                    className="w-full h-full object-cover"
+                  src="/ZTJ.png"
+                  alt="Zeyana Thabit Juma"
+                  width={208}
+                  height={208}
+                  className="w-full h-full object-cover"
                 />
-                </div>
+              </div>
               <div className="absolute bottom-0 right-0 bg-white border border-green-100 rounded-full px-3 py-1 shadow-md">
-                <p className="text-xs text-green-700 font-medium">BSc. Math and CS</p>
+                <p className="text-xs text-green-700 font-medium">Founder</p>
               </div>
               <div className="absolute top-0 left-0 bg-green-700 rounded-full px-3 py-1 shadow-md">
-                <p className="text-xs text-white font-medium">Leader 2023/24</p>
+                <p className="text-xs text-white font-medium">Zanzibar, TZ</p>
               </div>
             </div>
           </div>
 
+          {/* Stats */}
           <div className="grid grid-cols-3 gap-4">
             <div className="bg-white border border-gray-100 rounded-2xl p-4 text-center shadow-sm">
-              <p className="text-2xl font-bold text-green-700">3+</p>
+              <p className="text-2xl font-bold text-green-700">4+</p>
               <p className="text-xs text-gray-500 mt-1">Projects</p>
             </div>
             <div className="bg-white border border-gray-100 rounded-2xl p-4 text-center shadow-sm">
-              <p className="text-2xl font-bold text-green-700">4+</p>
-              <p className="text-xs text-gray-500 mt-1">Yrs Teaching</p>
+              <p className="text-2xl font-bold text-green-700">4</p>
+              <p className="text-xs text-gray-500 mt-1">Team Members</p>
             </div>
             <div className="bg-white border border-gray-100 rounded-2xl p-4 text-center shadow-sm">
               <p className="text-2xl font-bold text-green-700">4</p>
@@ -148,8 +149,9 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* Tech Stack */}
           <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
-            <p className="text-xs text-gray-400 tracking-widest uppercase mb-4">Tech Stack</p>
+            <p className="text-xs text-gray-400 tracking-widest uppercase mb-4">Our Tech Stack</p>
             <div className="flex flex-wrap gap-2">
               <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">Next.js</span>
               <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">Python</span>

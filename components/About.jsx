@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { GraduationCap, Award, BookOpen, Users } from "lucide-react";
+import { Lightbulb, Award, Target, Users } from "lucide-react";
 
 export default function About() {
   return (
@@ -15,8 +15,8 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-xs text-green-600 tracking-widest uppercase font-medium mb-2">Who I Am</p>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+          <p className="text-xs text-green-600 tracking-widest uppercase font-medium mb-2">Who We Are</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
           <div className="w-16 h-1 bg-green-600 mx-auto rounded-full" />
         </motion.div>
 
@@ -31,22 +31,20 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-gray-600 text-lg leading-relaxed">
-              I am a passionate third-year student pursuing a <span className="text-green-700 font-semibold">Bachelor of Science in Education</span>, majoring in Mathematics and Computer Science at Abdulrahman Al-Sumait University, Zanzibar.
+              <span className="text-green-700 font-semibold">Zeyhaan Tech Solution</span> is a registered tech company based in Zanzibar, Tanzania — founded and led by a passionate team of third-year students pursuing a <span className="text-green-700 font-semibold">Bachelor of Science in Education</span>, majoring in Mathematics and Computer Science at Abdulrahman Al-Sumait University.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              I am the founder of <span className="text-green-700 font-semibold">Zeyhaan Tech Solution</span> — a freelance tech brand built on the principles of innovation, precision, and growth. I specialize in building smart digital systems, developing websites, analyzing data, and producing professional technical documents.
+              We are a team of four dedicated tech professionals united by a shared mission — to deliver smart, efficient, and impactful digital solutions. From websites and business systems to data analysis and technical documentation, we bring precision and creativity to every project we undertake.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Beyond technology, I am deeply passionate about education. I have spent years tutoring students in Mathematics and Computer Science — from primary school level all the way to university. I believe technology and education together can transform lives.
+              Beyond technology, our team is deeply passionate about education. With years of experience tutoring Mathematics and Computer Science — from primary school to university level — we believe that technology and education together have the power to transform lives and communities.
             </p>
-
 
             {/* Business Licence */}
             <div className="pt-2">
               <p className="text-xs text-gray-400 tracking-widest uppercase mb-3">Business Registration</p>
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                className="relative group cursor-pointer rounded-2xl overflow-hidden border border-green-100 shadow-sm w-fit"
+              <div
+                className="relative group block w-fit rounded-2xl overflow-hidden border border-green-100 shadow-sm cursor-pointer"
                 onClick={() => window.open("/licence.jpg", "_blank")}
               >
                 <img
@@ -57,17 +55,17 @@ export default function About() {
                 <div className="absolute inset-0 bg-green-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <p className="text-white text-xs font-medium tracking-widest uppercase">View Licence</p>
                 </div>
-              </motion.div>
+              </div>
               <p className="text-xs text-gray-400 mt-2">Officially registered business — Zanzibar, Tanzania</p>
             </div>
 
             {/* Languages */}
             <div className="pt-2">
-              <p className="text-xs text-gray-400 tracking-widest uppercase mb-3">Languages</p>
+              <p className="text-xs text-gray-400 tracking-widest uppercase mb-3">Languages We Work In</p>
               <div className="flex flex-wrap gap-3">
-                <span className="text-sm bg-green-50 text-green-700 border border-green-100 px-4 py-1.5 rounded-full font-medium">English — Fluent</span>
-                <span className="text-sm bg-green-50 text-green-700 border border-green-100 px-4 py-1.5 rounded-full font-medium">Kiswahili — Fluent</span>
-                <span className="text-sm bg-green-50 text-green-700 border border-green-100 px-4 py-1.5 rounded-full font-medium">Arabic — Basic</span>
+                <span className="text-sm bg-green-50 text-green-700 border border-green-100 px-4 py-1.5 rounded-full font-medium">English</span>
+                <span className="text-sm bg-green-50 text-green-700 border border-green-100 px-4 py-1.5 rounded-full font-medium">Kiswahili</span>
+                <span className="text-sm bg-green-50 text-green-700 border border-green-100 px-4 py-1.5 rounded-full font-medium">Arabic</span>
               </div>
             </div>
           </motion.div>
@@ -82,34 +80,42 @@ export default function About() {
           >
             <div className="bg-green-50 border border-green-100 rounded-2xl p-6 space-y-3">
               <div className="w-10 h-10 bg-green-700 rounded-xl flex items-center justify-center">
-                <GraduationCap size={20} className="text-white" />
+                <Lightbulb size={20} className="text-white" />
               </div>
-              <h3 className="font-semibold text-gray-900">Education</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">BSc. Education — Mathematics with Computer Science, Al-Sumait University. Expected graduation 2026.</p>
+              <h3 className="font-semibold text-gray-900">Our Background</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                A team of third-year BSc. Education students — Mathematics with Computer Science — at Abdulrahman Al-Sumait University, Zanzibar.
+              </p>
             </div>
 
             <div className="bg-green-50 border border-green-100 rounded-2xl p-6 space-y-3">
               <div className="w-10 h-10 bg-green-700 rounded-xl flex items-center justify-center">
                 <Award size={20} className="text-white" />
               </div>
-              <h3 className="font-semibold text-gray-900">Achievement</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">Smartest Female Leader of the Year Award — Al-Sumait University (2023/2024). Division 1 — ACSEE (PCM).</p>
+              <h3 className="font-semibold text-gray-900">Recognition</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Our founder was awarded Smartest Female Leader of the Year — Al-Sumait University (2023/2024). Division 1 — ACSEE (PCM).
+              </p>
             </div>
 
             <div className="bg-green-50 border border-green-100 rounded-2xl p-6 space-y-3">
               <div className="w-10 h-10 bg-green-700 rounded-xl flex items-center justify-center">
-                <BookOpen size={20} className="text-white" />
+                <Target size={20} className="text-white" />
               </div>
-              <h3 className="font-semibold text-gray-900">Interests</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">Data-Driven Decision Making, Educational Technology, Software Development, Mathematics Education.</p>
+              <h3 className="font-semibold text-gray-900">Our Mission</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                To deliver innovative, high-quality digital solutions that solve real problems and create lasting value for individuals, businesses, and communities.
+              </p>
             </div>
 
             <div className="bg-green-50 border border-green-100 rounded-2xl p-6 space-y-3">
               <div className="w-10 h-10 bg-green-700 rounded-xl flex items-center justify-center">
                 <Users size={20} className="text-white" />
               </div>
-              <h3 className="font-semibold text-gray-900">Teaching</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">4+ years tutoring Mathematics and Computer Science — from primary school to university level students.</p>
+              <h3 className="font-semibold text-gray-900">Education Impact</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Our team has 4+ years of combined experience tutoring Mathematics and Computer Science — from primary school to university level.
+              </p>
             </div>
           </motion.div>
         </div>

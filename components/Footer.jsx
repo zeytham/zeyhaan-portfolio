@@ -32,25 +32,26 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-sm font-semibold tracking-widest uppercase text-gray-300">Quick Links</h4>
             <div className="flex flex-col gap-3">
-              <a href="#about" className="text-sm text-gray-400 hover:text-green-400 transition-colors">About</a>
-              <a href="#services" className="text-sm text-gray-400 hover:text-green-400 transition-colors">Services</a>
-              <a href="#projects" className="text-sm text-gray-400 hover:text-green-400 transition-colors">Projects</a>
-              <a href="#contact" className="text-sm text-gray-400 hover:text-green-400 transition-colors">Contact</a>
+              <a href="#about" className="text-sm text-gray-400 hover:text-green-400 transition-colors">About Us</a>
+              <a href="#services" className="text-sm text-gray-400 hover:text-green-400 transition-colors">Our Services</a>
+              <a href="#projects" className="text-sm text-gray-400 hover:text-green-400 transition-colors">Our Projects</a>
+              <a href="#team" className="text-sm text-gray-400 hover:text-green-400 transition-colors">Our Team</a>
+              <a href="#contact" className="text-sm text-gray-400 hover:text-green-400 transition-colors">Contact Us</a>
             </div>
           </div>
 
           {/* Contact */}
           <div className="space-y-4">
-            <h4 className="text-sm font-semibold tracking-widest uppercase text-gray-300">Contact</h4>
+            <h4 className="text-sm font-semibold tracking-widest uppercase text-gray-300">Get In Touch</h4>
             <div className="flex flex-col gap-3">
-              <a href="mailto:zeyanajuma204@gmail.com" className="flex items-center gap-3 text-sm text-gray-400 hover:text-green-400 transition-colors">
+              <div className="flex items-center gap-3 text-sm text-gray-400">
                 <Mail size={15} className="text-green-500 shrink-0" />
                 zeyanajuma204@gmail.com
-              </a>
-              <a href="tel:+255624945919" className="flex items-center gap-3 text-sm text-gray-400 hover:text-green-400 transition-colors">
+              </div>
+              <div className="flex items-center gap-3 text-sm text-gray-400">
                 <Phone size={15} className="text-green-500 shrink-0" />
                 +255 624 945 919
-              </a>
+              </div>
               <div className="flex items-center gap-3 text-sm text-gray-400">
                 <MapPin size={15} className="text-green-500 shrink-0" />
                 Mwanakwerekwe, Zanzibar, Tanzania
@@ -65,7 +66,7 @@ export default function Footer() {
             © {year} Zeyhaan Tech Solution. All rights reserved.
           </p>
           <p className="text-xs text-gray-600">
-            Designed and built by Zeyana Thabit Juma
+            Designed and built by Zeyhaan Tech Solution Team
           </p>
         </div>
       </div>
