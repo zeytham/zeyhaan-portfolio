@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Code2, Megaphone, Palette, Crown } from "lucide-react";
+import Image from "next/image";
 
 export default function Team() {
   return (
@@ -24,7 +24,7 @@ export default function Team() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
 
           {/* Zeyana - Founder */}
           <motion.div
@@ -167,6 +167,42 @@ export default function Team() {
               <div className="flex gap-2 pt-1">
                 <span className="text-xs bg-pink-50 text-pink-600 border border-pink-100 px-2 py-1 rounded-full">Design</span>
                 <span className="text-xs bg-pink-50 text-pink-600 border border-pink-100 px-2 py-1 rounded-full">Marketing</span>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Mohamed */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 group"
+          >
+            <div className="relative">
+              <div className="h-56 overflow-hidden">
+                <Image
+                  src="/23MC006.jpeg"
+                  alt="Mohamed M. Mbonde"
+                  width={300}
+                  height={224}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="absolute top-3 left-3 bg-teal-700 text-white text-xs px-3 py-1 rounded-full flex items-center gap-1">
+                <Code2 size={10} />
+                Developer
+              </div>
+            </div>
+            <div className="p-5 space-y-2">
+              <h3 className="font-bold text-gray-900">Mohamed M. Mbonde</h3>
+              <p className="text-xs text-teal-700 font-medium">Full Stack Developer</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Reliable full stack developer contributing to building and maintaining robust systems across projects.
+              </p>
+              <div className="flex gap-2 pt-1">
+                <span className="text-xs bg-teal-50 text-teal-700 border border-teal-100 px-2 py-1 rounded-full">Frontend</span>
+                <span className="text-xs bg-teal-50 text-teal-700 border border-teal-100 px-2 py-1 rounded-full">Backend</span>
               </div>
             </div>
           </motion.div>
