@@ -3,11 +3,12 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
+import Experiences from "@/components/Experiences";
 import Team from "@/components/Team";
 import Certificates from "@/components/Certificates";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Experiences from "@/components/Experiences";
+
 
 export default function Home() {
   return (
