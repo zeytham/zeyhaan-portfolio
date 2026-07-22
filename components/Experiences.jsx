@@ -50,7 +50,6 @@ export default function Experiences() {
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-green-600" />
-                {/* TAREHE: jaza tarehe kamili hapa */}
                 [TAREHE]
               </div>
             </div>
@@ -81,7 +80,6 @@ export default function Experiences() {
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-blue-600" />
-                {/* TAREHE: jaza tarehe kamili hapa */}
                 [TAREHE]
               </div>
             </div>
@@ -108,12 +106,130 @@ export default function Experiences() {
             <div className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <MapPin size={14} className="text-orange-600" />
-                {/* MAHALI: jaza mahali kamili hapa */}
                 [MAHALI]
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-orange-600" />
-                {/* TAREHE: jaza tarehe kamili hapa */}
+                [TAREHE]
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Experience 4 - IYC14 */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.35 }}
+            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 space-y-4"
+          >
+            <div className="flex items-start justify-between">
+              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+                <Sparkles size={20} className="text-purple-700" />
+              </div>
+              <span className="text-xs bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full font-medium">Applied</span>
+            </div>
+            <h3 className="text-lg font-bold text-gray-900">IYC14 — International Youth Conference</h3>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Applied to represent Zeyhaan Tech Solution at this international youth conference, expecting to attend.
+            </p>
+            <div className="flex flex-col gap-2 pt-1">
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <MapPin size={14} className="text-purple-600" />
+                New York, USA
+              </div>
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <CalendarDays size={14} className="text-purple-600" />
+                [TAREHE]
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Experience 5 - AfCFTA Startup Partnership Program */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 space-y-4"
+          >
+            <div className="flex items-start justify-between">
+              <div className="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center">
+                <Sparkles size={20} className="text-teal-700" />
+              </div>
+              <span className="text-xs bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full font-medium">Applied</span>
+            </div>
+            <h3 className="text-lg font-bold text-gray-900">AfCFTA Startup Partnership Program</h3>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Applied to this pan-African startup partnership program, expecting to attend and grow Zeyhaan Tech Solution's continental reach.
+            </p>
+            <div className="flex flex-col gap-2 pt-1">
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <MapPin size={14} className="text-teal-600" />
+                [MAHALI]
+              </div>
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <CalendarDays size={14} className="text-teal-600" />
+                [TAREHE]
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Experience 6 - Vigor Internship Program 2026 */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.45 }}
+            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 space-y-4"
+          >
+            <div className="flex items-start justify-between">
+              <div className="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center">
+                <Sparkles size={20} className="text-rose-700" />
+              </div>
+              <span className="text-xs bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full font-medium">Applied</span>
+            </div>
+            <h3 className="text-lg font-bold text-gray-900">Vigor Internship Program 2026</h3>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Applied to this internship program, expecting to attend and build further professional experience.
+            </p>
+            <div className="flex flex-col gap-2 pt-1">
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <MapPin size={14} className="text-rose-600" />
+                [MAHALI]
+              </div>
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <CalendarDays size={14} className="text-rose-600" />
+                [TAREHE]
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Experience 7 - Learn Innovate with Zanzibar University */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 space-y-4"
+          >
+            <div className="flex items-start justify-between">
+              <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                <Sparkles size={20} className="text-indigo-700" />
+              </div>
+              <span className="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-medium">Completed</span>
+            </div>
+            <h3 className="text-lg font-bold text-gray-900">Learn Innovate with Zanzibar University</h3>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Participated in this innovation-focused program in partnership with Zanzibar University.
+            </p>
+            <div className="flex flex-col gap-2 pt-1">
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <MapPin size={14} className="text-indigo-600" />
+                Zanzibar University, Zanzibar
+              </div>
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <CalendarDays size={14} className="text-indigo-600" />
                 [TAREHE]
               </div>
             </div>
