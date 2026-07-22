@@ -7,6 +7,7 @@ import Team from "@/components/Team";
 import Certificates from "@/components/Certificates";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Experiences from "@/components/Experiences";
 
 export default function Home() {
   return (
