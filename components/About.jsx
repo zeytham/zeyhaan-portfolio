@@ -31,13 +31,13 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-gray-600 text-lg leading-relaxed">
-              <span className="text-green-700 font-semibold">Zeyhaan Tech Solution</span> is a registered tech company based in Zanzibar, Tanzania — founded and led by a passionate team of third-year students pursuing a <span className="text-green-700 font-semibold">Bachelor of Science in Education</span>, majoring in Mathematics and Computer Science at Abdulrahman Al-Sumait University.
+              <span className="text-green-700 font-semibold">Zeyhaan Tech Solution</span> is a registered tech company based in Zanzibar, Tanzania. It is founded and led by a passionate team of third-year students pursuing a <span className="text-green-700 font-semibold">Bachelor of Science in Education</span>, majoring in Mathematics and Computer Science at Abdulrahman Al-Sumait University.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              We are a team of four dedicated tech professionals united by a shared mission — to deliver smart, efficient, and impactful digital solutions. From websites and business systems to data analysis and technical documentation, we bring precision and creativity to every project we undertake.
+              We are a team of five dedicated tech professionals united by a shared mission which is to deliver smart, efficient and impactful digital solutions. From websites and business systems to data analysis and technical documentation, we bring precision and creativity to every project we undertake.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Beyond technology, our team is deeply passionate about education. With years of experience tutoring Mathematics and Computer Science — from primary school to university level — we believe that technology and education together have the power to transform lives and communities.
+              Beyond technology, our team is deeply passionate about education. With years of experience tutoring Mathematics and Computer Science from primary school to university level, we believe that technology and education together have the power to transform lives and communities.
             </p>
 
             {/* Business Licence */}
@@ -56,7 +56,7 @@ export default function About() {
                   <p className="text-white text-xs font-medium tracking-widest uppercase">View Licence</p>
                 </div>
               </div>
-              <p className="text-xs text-gray-400 mt-2">Officially registered business — Zanzibar, Tanzania</p>
+              <p className="text-xs text-gray-400 mt-2">Zeyhaan Tech Solution is Officially registered  Zanzibar, Tanzania</p>
             </div>
 
             {/* Languages */}
@@ -84,7 +84,7 @@ export default function About() {
               </div>
               <h3 className="font-semibold text-gray-900">Our Background</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                A team of third-year BSc. Education students — Mathematics with Computer Science — at Abdulrahman Al-Sumait University, Zanzibar.
+                This is a team of third-year BSc. Education students majoring in  Mathematics with Computer Science at Abdulrahman Al-Sumait University, Zanzibar.
               </p>
             </div>
 
@@ -94,7 +94,7 @@ export default function About() {
               </div>
               <h3 className="font-semibold text-gray-900">Recognition</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Our founder was awarded Smartest Female Leader of the Year — Al-Sumait University (2023/2024). Division 1 — ACSEE (PCM).
+                Our founder was awarded Smartest Female Leader of the Year at Al-Sumait University (2023/2024).
               </p>
             </div>
 
@@ -104,7 +104,7 @@ export default function About() {
               </div>
               <h3 className="font-semibold text-gray-900">Our Mission</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                To deliver innovative, high-quality digital solutions that solve real problems and create lasting value for individuals, businesses, and communities.
+                To deliver innovative, high-quality digital solutions that solve real problems and create lasting value for individuals, businesses and communities.
               </p>
             </div>
 
@@ -114,7 +114,7 @@ export default function About() {
               </div>
               <h3 className="font-semibold text-gray-900">Education Impact</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Our team has 4+ years of combined experience tutoring Mathematics and Computer Science — from primary school to university level.
+                Our team has 4+ years of combined experience tutoring Mathematics and Computer Science from primary school to university level.
               </p>
             </div>
           </motion.div>
