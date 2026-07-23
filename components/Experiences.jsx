@@ -19,7 +19,7 @@ export default function Experiences() {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Experiences</h2>
           <div className="w-16 h-1 bg-green-600 mx-auto rounded-full" />
           <p className="text-gray-500 mt-6 max-w-xl mx-auto leading-relaxed">
-            Conferences, startup programs, and opportunities that have shaped our journey.
+            Conferences, startup programs and opportunities that have shaped our journey.
           </p>
         </motion.div>
 
@@ -41,7 +41,7 @@ export default function Experiences() {
             </div>
             <h3 className="text-lg font-bold text-gray-900">Sahara Sparks Startup School</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Selected to attend this startup-focused program, building on entrepreneurial skills for Zeyhaan Tech Solution.
+              Two Mmembers have been selected to attend this startup-focused program, building on entrepreneurial skills for Zeyhaan Tech Solution.
             </p>
             <div className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 text-xs text-gray-500">
@@ -69,9 +69,9 @@ export default function Experiences() {
               </div>
               <span className="text-xs bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full font-medium">Applied</span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900">TUSUA FUNDS — Seed Funding Initiative</h3>
+            <h3 className="text-lg font-bold text-gray-900">TUSUA FUNDS Seed Funding Initiative</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Applied for seed funding to support infrastructure, marketing, product completion, and legal costs for Zeyhaan Tech Solution.
+              We applied for seed funding to support infrastructure, marketing, product completion and legal costs for Zeyhaan Tech Solution.
             </p>
             <div className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 text-xs text-gray-500">
@@ -80,7 +80,7 @@ export default function Experiences() {
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-blue-600" />
-                [TAREHE]
+                19 July, 2026
               </div>
             </div>
           </motion.div>
@@ -106,11 +106,11 @@ export default function Experiences() {
             <div className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <MapPin size={14} className="text-orange-600" />
-                [MAHALI]
+                MOHAMMED SHEIN HALL (SUZA TUBGUU)
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-orange-600" />
-                [TAREHE]
+                15 August, 2026
               </div>
             </div>
           </motion.div>
@@ -129,9 +129,9 @@ export default function Experiences() {
               </div>
               <span className="text-xs bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full font-medium">Applied</span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900">IYC14 — International Youth Conference</h3>
+            <h3 className="text-lg font-bold text-gray-900">International Youth Conference(IYC14)</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Applied to represent Zeyhaan Tech Solution at this international youth conference, expecting to attend.
+              We applied to represent Zeyhaan Tech Solution at this international youth conference, we expecting to attend.
             </p>
             <div className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 text-xs text-gray-500">
@@ -140,7 +140,7 @@ export default function Experiences() {
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-purple-600" />
-                [TAREHE]
+                15 July, 2026
               </div>
             </div>
           </motion.div>
@@ -170,7 +170,7 @@ export default function Experiences() {
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-teal-600" />
-                [TAREHE]
+                15 June, 2026
               </div>
             </div>
           </motion.div>
@@ -191,16 +191,16 @@ export default function Experiences() {
             </div>
             <h3 className="text-lg font-bold text-gray-900">Vigor Internship Program 2026</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Applied to this internship program, expecting to attend and build further professional experience.
+              We applied four members  to this internship program, expecting to attend and build further professional experience.
             </p>
             <div className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <MapPin size={14} className="text-rose-600" />
-                [MAHALI]
+                NGAZIMIA, ZANZIBAR TANZANIA
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-rose-600" />
-                [TAREHE]
+                18 June, 2026
               </div>
             </div>
           </motion.div>
@@ -221,7 +221,7 @@ export default function Experiences() {
             </div>
             <h3 className="text-lg font-bold text-gray-900">Learn Innovate with Zanzibar University</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Participated in this innovation-focused program in partnership with Zanzibar University.
+              We participated in this innovation-focused program in partnership with Zanzibar University.
             </p>
             <div className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 text-xs text-gray-500">
@@ -230,7 +230,7 @@ export default function Experiences() {
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-indigo-600" />
-                [TAREHE]
+                21 June - 23 June 2026
               </div>
             </div>
           </motion.div>
@@ -249,9 +249,9 @@ export default function Experiences() {
               </div>
               <span className="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-medium">Member</span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900">Matecom Hub — Zanzibar Campus Ambassadors</h3>
+            <h3 className="text-lg font-bold text-gray-900">Matecom Hub Zanzibar Campus Ambassadors</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Member of this community connecting young talents in Zanzibar, sharing opportunities in tech and innovation.
+              Our CEO is a member of this community connecting young talents in Zanzibar, sharing opportunities in tech and innovation.
             </p>
             <div className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 text-xs text-gray-500">
@@ -260,7 +260,7 @@ export default function Experiences() {
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-amber-600" />
-                [TAREHE]
+                20 July 2025 to today
               </div>
             </div>
           </motion.div>
@@ -281,7 +281,7 @@ export default function Experiences() {
             </div>
             <h3 className="text-lg font-bold text-gray-900">Capital Markets Youth Investment Network (CMYIN)</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Member of this youth-led platform promoting financial literacy and capital markets awareness across Tanzania.
+              We are nembers of this youth-led platform promoting financial literacy and capital markets awareness across Tanzania.
             </p>
             <div className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 text-xs text-gray-500">
@@ -290,7 +290,7 @@ export default function Experiences() {
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-violet-600" />
-                [TAREHE]
+                21 July to today
               </div>
             </div>
           </motion.div>
@@ -309,9 +309,9 @@ export default function Experiences() {
               </div>
               <span className="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-medium">Member</span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900">SPARK 2026 — Team Tanzania</h3>
+            <h3 className="text-lg font-bold text-gray-900">SPARK 2026 in Team Tanzania</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Member of SPARK 2026 Team Tanzania, part of a wider community focused on skills-building and innovation.
+              Our CEO is a member of SPARK 2026 Team Tanzania, part of a wider community focused on skills-building and innovation.
             </p>
             <div className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 text-xs text-gray-500">
@@ -320,7 +320,7 @@ export default function Experiences() {
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-yellow-700" />
-                [TAREHE]
+                15 March, 2026
               </div>
             </div>
           </motion.div>
@@ -339,18 +339,18 @@ export default function Experiences() {
               </div>
               <span className="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-medium">Confirmed Attendee</span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900">Small Business Seminar Series — Coprosperity Fund</h3>
+            <h3 className="text-lg font-bold text-gray-900">Small Business Seminar Series Coprosperity Fund</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Registered and confirmed attendee of this seminar series, equipping small business owners with tools and insights to grow.
+              We are registered and confirmed attendee of this seminar series, equipping small business owners with tools and insights to grow.
             </p>
             <div className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <MapPin size={14} className="text-emerald-600" />
-                [MAHALI]
+                Zanzibar
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-emerald-600" />
-                [TAREHE]
+                Not dated
               </div>
             </div>
           </motion.div>
@@ -371,16 +371,16 @@ export default function Experiences() {
             </div>
             <h3 className="text-lg font-bold text-gray-900">Cyber Swahili Community Leadership</h3>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Member of this leadership community focused on cybersecurity awareness and peer support in Kiswahili.
+              Our CEO is a member of this leadership community focused on cybersecurity awareness and peer support in Kiswahili.
             </p>
             <div className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <MapPin size={14} className="text-red-600" />
-                [MAHALI]
+                Tanzania
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-red-600" />
-                [TAREHE]
+                15 August, 2025
               </div>
             </div>
           </motion.div>
