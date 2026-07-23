@@ -46,11 +46,11 @@ export default function Experiences() {
             <div className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <MapPin size={14} className="text-green-600" />
-                UDSM, Dar es Salaam, Tanzania
+                New Library - UDSM, Dar es Salaam, Tanzania
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-green-600" />
-                [TAREHE]
+                August 12, 2026
               </div>
             </div>
           </motion.div>
@@ -230,6 +230,156 @@ export default function Experiences() {
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CalendarDays size={14} className="text-indigo-600" />
+                [TAREHE]
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Experience 8 - Matecom Hub Zanzibar Campus Ambassadors */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.55 }}
+            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 space-y-4"
+          >
+            <div className="flex items-start justify-between">
+              <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center">
+                <Sparkles size={20} className="text-amber-700" />
+              </div>
+              <span className="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-medium">Member</span>
+            </div>
+            <h3 className="text-lg font-bold text-gray-900">Matecom Hub — Zanzibar Campus Ambassadors</h3>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Member of this community connecting young talents in Zanzibar, sharing opportunities in tech and innovation.
+            </p>
+            <div className="flex flex-col gap-2 pt-1">
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <MapPin size={14} className="text-amber-600" />
+                Zanzibar, Tanzania
+              </div>
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <CalendarDays size={14} className="text-amber-600" />
+                [TAREHE]
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Experience 9 - Capital Markets Youth Investment Network */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 space-y-4"
+          >
+            <div className="flex items-start justify-between">
+              <div className="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center">
+                <Sparkles size={20} className="text-violet-700" />
+              </div>
+              <span className="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-medium">Member</span>
+            </div>
+            <h3 className="text-lg font-bold text-gray-900">Capital Markets Youth Investment Network (CMYIN)</h3>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Member of this youth-led platform promoting financial literacy and capital markets awareness across Tanzania.
+            </p>
+            <div className="flex flex-col gap-2 pt-1">
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <MapPin size={14} className="text-violet-600" />
+                Tanzania
+              </div>
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <CalendarDays size={14} className="text-violet-600" />
+                [TAREHE]
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Experience 10 - SPARK 2026 Team Tanzania */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.65 }}
+            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 space-y-4"
+          >
+            <div className="flex items-start justify-between">
+              <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center">
+                <Sparkles size={20} className="text-yellow-700" />
+              </div>
+              <span className="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-medium">Member</span>
+            </div>
+            <h3 className="text-lg font-bold text-gray-900">SPARK 2026 — Team Tanzania</h3>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Member of SPARK 2026 Team Tanzania, part of a wider community focused on skills-building and innovation.
+            </p>
+            <div className="flex flex-col gap-2 pt-1">
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <MapPin size={14} className="text-yellow-700" />
+                Tanzania
+              </div>
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <CalendarDays size={14} className="text-yellow-700" />
+                [TAREHE]
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Experience 11 - Coprosperity Fund Small Business Seminar Series */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 space-y-4"
+          >
+            <div className="flex items-start justify-between">
+              <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center">
+                <Sparkles size={20} className="text-emerald-700" />
+              </div>
+              <span className="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-medium">Confirmed Attendee</span>
+            </div>
+            <h3 className="text-lg font-bold text-gray-900">Small Business Seminar Series — Coprosperity Fund</h3>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Registered and confirmed attendee of this seminar series, equipping small business owners with tools and insights to grow.
+            </p>
+            <div className="flex flex-col gap-2 pt-1">
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <MapPin size={14} className="text-emerald-600" />
+                [MAHALI]
+              </div>
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <CalendarDays size={14} className="text-emerald-600" />
+                [TAREHE]
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Experience 12 - Cyber Swahili Community Leadership */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.75 }}
+            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 space-y-4"
+          >
+            <div className="flex items-start justify-between">
+              <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
+                <Sparkles size={20} className="text-red-700" />
+              </div>
+              <span className="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-medium">Member</span>
+            </div>
+            <h3 className="text-lg font-bold text-gray-900">Cyber Swahili Community Leadership</h3>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Member of this leadership community focused on cybersecurity awareness and peer support in Kiswahili.
+            </p>
+            <div className="flex flex-col gap-2 pt-1">
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <MapPin size={14} className="text-red-600" />
+                [MAHALI]
+              </div>
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <CalendarDays size={14} className="text-red-600" />
                 [TAREHE]
               </div>
             </div>
