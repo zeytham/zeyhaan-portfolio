@@ -80,7 +80,7 @@ export default function Certificates() {
             </div>
             <h3 className="text-lg font-semibold text-gray-700">More Certificates Coming</h3>
             <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
-              Our team continues to grow and learn. More certifications will be added soon — Bi idhnillah.
+              Our team continues to grow and learn. More certifications will be added soon Biidhnillah.
             </p>
           </motion.div>
 
