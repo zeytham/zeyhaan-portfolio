@@ -10,7 +10,6 @@ import {
   Store,
   MapPin,
   Hash,
-  YoutubeIcon,
 } from "lucide-react";
 
 const projects = [
@@ -165,7 +164,7 @@ export default function Projects() {
                       whileTap={{ scale: 0.97 }}
                       className="inline-flex items-center gap-2 bg-white border border-green-200 text-green-700 hover:bg-green-50 text-sm font-medium px-4 py-2 rounded-full transition-colors duration-300"
                     >
-                      <YoutubeIcon size={14} />
+                      <ExternalLink size={14} />
                       Watch Demo
                     </motion.a>
                   )}
