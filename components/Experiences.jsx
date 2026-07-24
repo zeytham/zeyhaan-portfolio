@@ -398,7 +398,7 @@ export default function Experiences() {
             </div>
             <h3 className="text-lg font-semibold text-gray-700">More Experiences Coming</h3>
             <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
-              We continue to seek opportunities that grow our impact — Bi idhnillah.
+              We continue to seek opportunities that grow our impact biidhnillah.
             </p>
           </motion.div>
 
