@@ -131,7 +131,7 @@ export default function Services() {
           className="mt-14 text-center"
         >
           
-            href="#contact"
+            <a href="#contact"
             className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-sm font-semibold px-6 py-3 rounded-full transition-colors duration-300 group"
           >
             Discuss your project with us
