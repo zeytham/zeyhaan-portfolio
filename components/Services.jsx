@@ -7,6 +7,7 @@ import {
   FileText,
   Smartphone,
   Lightbulb,
+  Palette,
   ArrowRight,
 } from "lucide-react";
 
@@ -16,22 +17,22 @@ const services = [
     title: "Web Development",
     description:
       "We design and develop modern, responsive websites and web applications tailored to your needs from landing pages to full-stack platforms.",
-    tags: ["Next.js", "HTML5", "CSS3", "JavaScript", "Reactive", "Tailwind", "Railway"],
+    tags: ["Next.js", "HTML5", "CSS3", "JavaScript", "Supabase", "Firebase"],
     featured: true,
   },
   {
     icon: Smartphone,
     title: "Mobile App Development",
     description:
-      "We build cross-platform mobile apps for Android and iOS. from idea to deployment with clean UI, offline support and real backend integration.",
-    tags: ["React Native", "Expo", "Railway", "REST APIs", "Play Store Deployment"],
+      "We build cross-platform mobile apps for Android and iOS. From idea to deployment with clean UI, offline support and real backend integration.",
+    tags: ["React Native", "Expo", "Firebase", "REST APIs", "Play Store Deployment"],
     featured: true,
   },
   {
     icon: Settings,
     title: "Systems Development",
     description:
-      "We build smart, efficient business systems ncluding ordering platforms, inventory systems and custom dashboards designed for real-world operations.",
+      "We build smart, efficient business systems including ordering platforms, inventory systems and custom dashboards designed for real-world operations.",
     tags: ["Python", "C / C++", "Database Design", "Vercel", "Railway"],
   },
   {
@@ -55,6 +56,13 @@ const services = [
       "We help early-stage ideas become real products from concept validation and MVP planning to pitching and startup program applications.",
     tags: ["MVP Planning", "Pitch Decks", "Product Strategy", "Startup Support"],
   },
+  {
+    icon: Palette,
+    title: "Graphic Design & Print Media",
+    description:
+      "We design eye-catching posters, banners, invitation cards and event materials including wedding cards, business cards and banners.",
+    tags: ["Poster Design", "Banners", "Wedding Cards", "Canva", "Event Branding"],
+  },
 ];
 
 export default function Services() {
@@ -74,7 +82,7 @@ export default function Services() {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
           <div className="w-16 h-1 bg-green-600 mx-auto rounded-full" />
           <p className="text-gray-500 mt-6 max-w-xl mx-auto leading-relaxed">
-            We provide professional tech services built on precision clarity and real-world impact that guided by our motto Innovate, Develop, Grow.
+            We provide professional tech services built on precision, clarity, and real-world impact — guided by our motto: Innovate, Develop, Grow.
           </p>
         </motion.div>
 
@@ -131,10 +139,10 @@ export default function Services() {
           className="mt-14 text-center"
         >
           
-            <a href="#contact"
+            href="#contact"
             className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-sm font-semibold px-6 py-3 rounded-full transition-colors duration-300 group"
           >
-            Discuss your project today with us
+            Discuss your project with us
             <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
           </a>
         </motion.div>
