@@ -1,4 +1,3 @@
-```jsx
 "use client";
 import { motion } from "framer-motion";
 import {
@@ -10,6 +9,7 @@ import {
   Store,
   MapPin,
   Hash,
+  Youtube,
 } from "lucide-react";
 
 const projects = [
@@ -164,7 +164,7 @@ export default function Projects() {
                       whileTap={{ scale: 0.97 }}
                       className="inline-flex items-center gap-2 bg-white border border-green-200 text-green-700 hover:bg-green-50 text-sm font-medium px-4 py-2 rounded-full transition-colors duration-300"
                     >
-                      <ExternalLink size={14} />
+                      <Youtube size={14} />
                       Watch Demo
                     </motion.a>
                   )}
@@ -195,4 +195,3 @@ export default function Projects() {
     </section>
   );
 }
-```
