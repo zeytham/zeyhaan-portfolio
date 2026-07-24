@@ -42,23 +42,12 @@ export default function About() {
               Beyond technology, we are deeply passionate about <span className="text-green-700 font-semibold">education and knowledge sharing</span>. With academic and practical experience in Mathematics and Computer Science, alongside experience in tutoring learners from primary school to university level, we believe that technology and education together have the power to transform lives, strengthen communities, and create meaningful opportunities for the future.
             </p>
 
-            {/* Business Licence */}
+            {/* Legal Registration */}
             <div className="pt-2">
-              <p className="text-xs text-gray-400 tracking-widest uppercase mb-3">Business Registration</p>
-              <div
-                className="relative group block w-fit rounded-2xl overflow-hidden border border-green-100 shadow-sm cursor-pointer"
-                onClick={() => window.open("/licence.jpg", "_blank")}
-              >
-                <img
-                  src="/licence.jpg"
-                  alt="Zeyhaan Tech Solution Business Licence"
-                  className="w-64 h-40 object-cover"
-                />
-                <div className="absolute inset-0 bg-green-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-white text-xs font-medium tracking-widest uppercase">View Licence</p>
-                </div>
-              </div>
-              <p className="text-xs text-gray-400 mt-2">Zeyhaan Tech Solution is officially registered in Zanzibar, Tanzania</p>
+              <p className="text-xs text-gray-400 tracking-widest uppercase mb-3">Legal Registration</p>
+              <p className="text-sm text-gray-500 leading-relaxed">
+                <span className="text-green-700 font-semibold">Zeyhaan Tech Solution</span> is a legally registered business entity in Zanzibar, Tanzania, operating as a sole proprietorship and committed to providing professional technology and digital solutions.
+              </p>
             </div>
 
             {/* Languages */}
