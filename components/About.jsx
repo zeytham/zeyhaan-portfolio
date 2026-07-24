@@ -31,22 +31,22 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-gray-600 text-lg leading-relaxed">
-              <span className="text-green-700 font-semibold">Zeyhaan Tech Solution</span> is a registered technology company based in Zanzibar, Tanzania, founded and owned by a passionate technology professional with a strong background in <span className="text-green-700 font-semibold">Mathematics and Computer Science</span>. Officially registered on 14 May 2026, the company was established with a vision to use technology, innovation, and knowledge to create practical digital solutions that solve real-world problems and empower individuals, businesses, institutions, and organizations.
+              <span className="text-green-700 font-semibold">Zeyhaan Tech Solution</span> is a registered technology company based in Zanzibar, Tanzania. Founded and owned by a passionate technology professional with a strong background in <span className="text-green-700 font-semibold">Mathematics and Computer Science</span>. Officially registered on 14 May 2026, the company was established with a vision to use technology, innovation and knowledge to create practical digital solutions that solve real-world problems and empower individuals, businesses, institutions and organizations.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              Zeyhaan Tech Solution brings together a dedicated team of technology enthusiasts, professionals, and collaborators with diverse skills and areas of expertise. While the company is founded and owned by its founder, our team members work collaboratively to contribute their knowledge, creativity, and technical abilities to different projects. From websites and web applications to business management systems, mobile applications, data solutions, and technical documentation, we are committed to delivering reliable, efficient, and impactful digital solutions.
+              Zeyhaan Tech Solution brings together a dedicated team of technology enthusiasts, professionals and collaborators with diverse skills and areas of expertise. While the company is founded and owned by its founder, our team members work collaboratively to contribute their knowledge, creativity and technical abilities to different projects. From websites and web applications to business management systems, mobile applications, data solutions and technical documentation, we are committed to delivering reliable, efficient and impactful digital solutions.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              Beyond technology, we are deeply passionate about <span className="text-green-700 font-semibold">education and knowledge sharing</span>. With academic and practical experience in Mathematics and Computer Science, alongside experience in tutoring learners from primary school to university level, we believe that technology and education together have the power to transform lives, strengthen communities, and create meaningful opportunities for the future.
+              Beyond technology, we are deeply passionate about <span className="text-green-700 font-semibold">education and knowledge sharing</span>. With academic and practical experience in Mathematics and Computer Science, alongside experience in tutoring learners from primary school to university level, we believe that technology and education together have the power to transform lives, strengthen communities and create meaningful opportunities for the future.
             </p>
 
             {/* Legal Registration */}
             <div className="pt-2">
               <p className="text-xs text-gray-400 tracking-widest uppercase mb-3">Legal Registration</p>
               <p className="text-sm text-gray-500 leading-relaxed">
-                <span className="text-green-700 font-semibold">Zeyhaan Tech Solution</span> is a legally registered business entity in Zanzibar, Tanzania, operating as a sole proprietorship and committed to providing professional technology and digital solutions.
+                <span className="text-green-700 font-semibold">Zeyhaan Tech Solution</span> is a legally registered business entity in Zanzibar, Tanzania. Operating as a sole proprietorship and committed to providing professional technology and digital solutions.
               </p>
             </div>
 
@@ -85,7 +85,7 @@ export default function About() {
               </div>
               <h3 className="font-semibold text-gray-900">Recognition</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Our founder was awarded Smartest Female Leader of the Year at Al-Sumait University (2023/2024), reflecting a commitment to leadership, innovation, and positive impact.
+                Our founder was awarded Smartest Female Leader of the Year at Al-Sumait University (2023/2024), reflecting a commitment to leadership, innovation and positive impact.
               </p>
             </div>
 
@@ -95,7 +95,7 @@ export default function About() {
               </div>
               <h3 className="font-semibold text-gray-900">Our Mission</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                To design, develop, and deliver reliable, innovative, and user-centered digital solutions that solve real-world problems, improve efficiency, support digital transformation, and create meaningful value for our clients and communities.
+                To design, develop and deliver reliable, innovative and user-centered digital solutions that solve real-world problems, improve efficiency, support digital transformation and create meaningful value for our clients and communities.
               </p>
             </div>
 
@@ -105,7 +105,7 @@ export default function About() {
               </div>
               <h3 className="font-semibold text-gray-900">Education Impact</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                With experience in Mathematics and Computer Science education, our team believes in using technology and knowledge sharing to improve learning, empower individuals, and contribute to stronger and more digitally informed communities.
+                With experience in Mathematics and Computer Science education, our team believes in using technology and knowledge sharing to improve learning, empower individuals and contribute to stronger and more digitally informed communities.
               </p>
             </div>
           </motion.div>
