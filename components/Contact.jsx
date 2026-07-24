@@ -3,6 +3,59 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 
+const teamContacts = [
+  {
+    initials: "ZT",
+    name: "Zeyana Thabit Juma",
+    role: "Founder & Lead Developer",
+    color: "bg-green-700",
+    roleColor: "text-green-700",
+    email: "zeyanajuma204@gmail.com",
+    phone: "+255 624 945 919",
+    phoneRaw: "+255624945919",
+  },
+  {
+    initials: "AH",
+    name: "Asmaa Hamad Ali",
+    role: "UI/UX Designer & Marketing",
+    color: "bg-pink-600",
+    roleColor: "text-pink-600",
+    email: "asmaahamad329@gmail.com",
+    phone: "+255 767 013 988",
+    phoneRaw: "+255767013988",
+  },
+  {
+    initials: "ON",
+    name: "Omar Nassor Omar",
+    role: "Full Stack Developer & Marketing",
+    color: "bg-purple-700",
+    roleColor: "text-purple-700",
+    email: "omarnassor315@gmail.com",
+    phone: "+255 777 107 332",
+    phoneRaw: "+255777107332",
+  },
+  {
+    initials: "HJ",
+    name: "Harith Juma Marzuk",
+    role: "Software Developer",
+    color: "bg-blue-700",
+    roleColor: "text-blue-700",
+    email: "harithjumam@gmail.com",
+    phone: "+255 777 519 924",
+    phoneRaw: "+255777519924",
+  },
+  {
+    initials: "MM",
+    name: "Mohamed M. Mbonde",
+    role: "Full Stack Developer",
+    color: "bg-teal-700",
+    roleColor: "text-teal-700",
+    email: "mbondemohamed25@gmail.com",
+    phone: "+255 627 032 115",
+    phoneRaw: "+255627032115",
+  },
+];
+
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -43,7 +96,7 @@ export default function Contact() {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
           <div className="w-16 h-1 bg-green-600 mx-auto rounded-full" />
           <p className="text-gray-500 mt-6 max-w-xl mx-auto leading-relaxed">
-            Have a project in mind or want to collaborate? Reach out to any of our team members — we would love to hear from you.
+            Have a project in mind or want to collaborate? Reach out to any of our team members we would love to hear from you.
           </p>
         </motion.div>
 
@@ -55,104 +108,68 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="space-y-6"
+            className="space-y-4"
           >
-            <h3 className="text-xl font-bold text-gray-900">Reach Our Team</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Reach Our Team</h3>
 
-            {/* Zeyana */}
-            <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm space-y-3">
-              <div className="flex items-center gap-3 mb-1">
-                <div className="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">ZT</span>
+            {teamContacts.map((person, index) => (
+              <motion.div
+                key={person.email}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                whileHover={{ y: -3, boxShadow: "0 10px 20px -8px rgba(0,0,0,0.1)" }}
+                className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm space-y-3 transition-shadow duration-300"
+              >
+                <div className="flex items-center gap-3 mb-1">
+                  <div className={`w-8 h-8 ${person.color} rounded-full flex items-center justify-center shrink-0`}>
+                    <span className="text-white text-xs font-bold">{person.initials}</span>
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-gray-900">{person.name}</p>
+                    <p className={`text-xs ${person.roleColor}`}>{person.role}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm font-bold text-gray-900">Zeyana Thabit Juma</p>
-                  <p className="text-xs text-green-700">Founder & Lead Developer</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 text-sm text-gray-500">
-                <Mail size={14} className="text-green-600 shrink-0" />
-                zeyanajuma204@gmail.com
-              </div>
-              <div className="flex items-center gap-3 text-sm text-gray-500">
-                <Phone size={14} className="text-green-600 shrink-0" />
-                +255 624 945 919
-              </div>
-            </div>
-
-            {/* Asmaa */}
-            <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm space-y-3">
-              <div className="flex items-center gap-3 mb-1">
-                <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">AH</span>
-                </div>
-                <div>
-                  <p className="text-sm font-bold text-gray-900">Asmaa Hamad Ali</p>
-                  <p className="text-xs text-pink-600">UI/UX Designer & Marketing</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 text-sm text-gray-500">
-                <Mail size={14} className="text-green-600 shrink-0" />
-                asmaahamad329@gmail.com
-              </div>
-              <div className="flex items-center gap-3 text-sm text-gray-500">
-                <Phone size={14} className="text-green-600 shrink-0" />
-                +255 767 013 988
-              </div>
-            </div>
-
-            {/* Omar */}
-            <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm space-y-3">
-              <div className="flex items-center gap-3 mb-1">
-                <div className="w-8 h-8 bg-purple-700 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">ON</span>
-                </div>
-                <div>
-                  <p className="text-sm font-bold text-gray-900">Omar Nassor Omar</p>
-                  <p className="text-xs text-purple-700">Full Stack Developer & Marketing</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 text-sm text-gray-500">
-                <Mail size={14} className="text-green-600 shrink-0" />
-                omarnassor315@gmail.com
-              </div>
-              <div className="flex items-center gap-3 text-sm text-gray-500">
-                <Phone size={14} className="text-green-600 shrink-0" />
-                +255 777 107 332
-              </div>
-            </div>
-
-            {/* Harith */}
-            <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm space-y-3">
-              <div className="flex items-center gap-3 mb-1">
-                <div className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">HJ</span>
-                </div>
-                <div>
-                  <p className="text-sm font-bold text-gray-900">Harith Juma Marzuk</p>
-                  <p className="text-xs text-blue-700">Software Developer</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 text-sm text-gray-500">
-                <Mail size={14} className="text-green-600 shrink-0" />
-                harithjumam@gmail.com
-              </div>
-              <div className="flex items-center gap-3 text-sm text-gray-500">
-                <Phone size={14} className="text-green-600 shrink-0" />
-                +255 777 519 924
-              </div>
-            </div>
+                
+                  href={`mailto:${person.email}`}
+                  className="flex items-center gap-3 text-sm text-gray-500 hover:text-green-700 transition-colors duration-200 w-fit"
+                >
+                  <Mail size={14} className="text-green-600 shrink-0" />
+                  {person.email}
+                </a>
+                
+                  href={`tel:${person.phoneRaw}`}
+                  className="flex items-center gap-3 text-sm text-gray-500 hover:text-green-700 transition-colors duration-200 w-fit"
+                >
+                  <Phone size={14} className="text-green-600 shrink-0" />
+                  {person.phone}
+                </a>
+              </motion.div>
+            ))}
 
             {/* Location */}
-            <div className="flex items-center gap-3 p-4 bg-green-50 border border-green-100 rounded-2xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="flex items-center gap-3 p-4 bg-green-50 border border-green-100 rounded-2xl"
+            >
               <MapPin size={16} className="text-green-600 shrink-0" />
-              <p className="text-sm text-green-700 font-medium">Chukwani, Abdulrahman Al-Sumait University, Zanzibar, Tanzania</p>
-            </div>
+              <p className="text-sm text-green-700 font-medium">Mwanakwerekwe, Zanzibar Tanzania</p>
+            </motion.div>
 
-            <div className="flex items-center gap-3 p-4 bg-green-50 border border-green-100 rounded-2xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.45 }}
+              className="flex items-center gap-3 p-4 bg-green-50 border border-green-100 rounded-2xl"
+            >
               <span className="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse shrink-0" />
               <p className="text-sm text-green-700 font-medium">We are currently available for new projects and collaborations</p>
-            </div>
+            </motion.div>
           </motion.div>
 
           {/* Right - Form */}
