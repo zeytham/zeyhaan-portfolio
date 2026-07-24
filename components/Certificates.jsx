@@ -67,6 +67,48 @@ export default function Certificates() {
             </div>
           </motion.div>
 
+          {/* Certificate 2 - Business Registration */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 group"
+          >
+            <div
+              className="relative h-48 overflow-hidden cursor-pointer"
+              onClick={() => window.open("/licence.jpg", "_blank")}
+            >
+              <img
+                src="/licence.jpg"
+                alt="Zeyhaan Tech Solution Business Registration Certificate"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-green-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <p className="text-white text-xs font-medium tracking-widest uppercase">View Registration</p>
+              </div>
+            </div>
+            <div className="p-5 space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 bg-green-700 rounded-xl flex items-center justify-center shrink-0">
+                  <Award size={16} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 text-sm">Business Registration Certificate</h3>
+                  <p className="text-xs text-green-700 font-medium">Zeyhaan Tech Solution</p>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-2 pt-1">
+                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">Registered Business</span>
+                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">Technology Company</span>
+              </div>
+              <div className="flex items-center justify-between pt-1">
+                <p className="text-xs text-gray-400">14 May 2026</p>
+                <span className="text-xs bg-green-50 text-green-700 px-3 py-1 rounded-full">Officially Registered</span>
+              </div>
+            </div>
+          </motion.div>
+
           {/* More Coming */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
