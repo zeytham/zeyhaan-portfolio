@@ -132,14 +132,14 @@ export default function Contact() {
                   </div>
                 </div>
                 
-                  href={`mailto:${person.email}`}
+                  <a href={`mailto:${person.email}`}
                   className="flex items-center gap-3 text-sm text-gray-500 hover:text-green-700 transition-colors duration-200 w-fit"
                 >
                   <Mail size={14} className="text-green-600 shrink-0" />
                   {person.email}
                 </a>
                 
-                  href={`tel:${person.phoneRaw}`}
+                  <a href={`tel:${person.phoneRaw}`}
                   className="flex items-center gap-3 text-sm text-gray-500 hover:text-green-700 transition-colors duration-200 w-fit"
                 >
                   <Phone size={14} className="text-green-600 shrink-0" />
