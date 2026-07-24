@@ -82,7 +82,7 @@ export default function Services() {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
           <div className="w-16 h-1 bg-green-600 mx-auto rounded-full" />
           <p className="text-gray-500 mt-6 max-w-xl mx-auto leading-relaxed">
-            We provide professional tech services built on precision, clarity, and real-world impact — guided by our motto: Innovate, Develop, Grow.
+            We provide professional tech services built on precision, clarity and real-world impact guided by our mottoInn ovate, Develop, Grow.
           </p>
         </motion.div>
 
