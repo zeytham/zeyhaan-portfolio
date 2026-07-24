@@ -1,12 +1,87 @@
 "use client";
 import { motion } from "framer-motion";
-import { ExternalLink, Code2 } from "lucide-react";
+import {
+  ExternalLink,
+  Code2,
+  Briefcase,
+  GraduationCap,
+  ShoppingBag,
+  Store,
+  MapPin,
+  Hash,
+  Youtube,
+} from "lucide-react";
+
+const projects = [
+  {
+    icon: Briefcase,
+    category: "Personal Portfolio",
+    title: "Personal Portfolio — Version 1",
+    description:
+      "My first professional portfolio website built before the official registration of Zeyhaan Tech Solution. Showcases my early projects and skills.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Vercel"],
+    liveUrl: "https://zeyana-portfolio.vercel.app/",
+    status: "Live",
+  },
+  {
+    icon: GraduationCap,
+    category: "School Website",
+    title: "Mpendae Secondary School Website",
+    description:
+      "Official website for Mpendae Primary and Secondary School, Zanzibar — providing school information, announcements, and contact details.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Vercel"],
+    liveUrl: "https://mpendae-secondary-school.vercel.app/",
+    status: "Live",
+  },
+  {
+    icon: ShoppingBag,
+    category: "Business System",
+    title: "Keysha Kids Collection — Business System",
+    description:
+      "A full-stack business management system for Keysha Kids Collection, Zanzibar. Features POS, inventory, debt tracking, sales reports, customer management, automated backups and role-based access control.",
+    tags: ["React 18", "Node.js", "PostgreSQL", "Prisma ORM", "Railway", "Vercel"],
+    liveUrl: "https://keyshakids.vercel.app",
+    status: "Live",
+  },
+  {
+    icon: Store,
+    category: "Business System",
+    title: "Naoson's Collections — Mfumo wa Duka",
+    description:
+      "A full-stack POS and business management system for Naoson's Collections — a real client in Zanzibar. Features inventory management, sales tracking, profit reports, stock alerts, receipt printing, Excel/PDF export, backup & restore, and secure login.",
+    tags: ["Next.js 16", "Tailwind CSS", "SQLite/Turso", "Vercel", "JWT Auth"],
+    liveUrl: "https://naoson.vercel.app/",
+    status: "Live",
+  },
+  {
+    icon: MapPin,
+    category: "Tourism Platform",
+    title: "Zebra Costa — Discover the Magic of Zanzibar",
+    description:
+      "A full-stack tourism platform showcasing Zanzibar's hotels, restaurants, and tour packages — built with an admin panel for managing listings, bookings, and content.",
+    tags: ["Next.js 14", "Express", "Prisma", "PostgreSQL", "Vercel", "Railway"],
+    liveUrl: "https://tanzania-tourism-platform.vercel.app/",
+    status: "Live",
+  },
+  {
+    icon: Hash,
+    category: "Security Tool",
+    title: "Message Digest Calculator",
+    description:
+      "A cryptographic tool that computes and compares hash digests of messages — built to demonstrate hash function properties like preimage resistance and collision detection.",
+    tags: ["Cryptography", "Hashing", "Web App", "Railway"],
+    liveUrl: "https://message-digest-calculator-production.up.railway.app/",
+    videoUrl: "https://youtu.be/f0RCJNSpoYE",
+    status: "Live",
+  },
+];
 
 export default function Projects() {
   return (
     <section id="projects" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -22,241 +97,88 @@ export default function Projects() {
           </p>
         </motion.div>
 
+        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-          {/* Card 1 - OrderEase */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
-          >
-            <div className="h-36 bg-white border-b border-gray-100 flex items-center justify-between px-6">
-              <div>
-                <p className="text-3xl font-black text-green-700 tracking-tight">Order</p>
-                <p className="text-3xl font-black text-gray-900 tracking-tight">Ease</p>
-              </div>
-              <div className="w-16 h-16 rounded-2xl bg-green-50 border border-green-100 flex items-center justify-center">
-                <span className="text-3xl">🛒</span>
-              </div>
-              <div className="absolute top-4 right-4 bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full font-medium">Live</div>
-            </div>
-            <div className="p-5 space-y-3">
-              <h3 className="text-lg font-bold text-gray-900">OrderEase — Campus Ordering System</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
-                A web-based ordering platform for campus environments. Students browse vendor menus, place orders, and receive real-time notifications.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">HTML5</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">CSS3</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">JavaScript</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">Supabase</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">Vercel</span>
-              </div>
-              <motion.a
-                href="https://orderease-kappa.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.97 }}
-                className="inline-flex items-center gap-2 bg-green-700 text-white text-sm font-medium px-4 py-2 rounded-full"
+          {projects.map((project, index) => {
+            const Icon = project.icon;
+            return (
+              <motion.div
+                key={project.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                whileHover={{ y: -6 }}
+                className="relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col"
               >
-                <ExternalLink size={14} />
-                Live Demo
-              </motion.a>
-            </div>
-          </motion.div>
+                {/* Status badge */}
+                <span className="absolute top-5 right-5 text-[10px] uppercase tracking-wide bg-green-50 text-green-700 border border-green-100 px-2.5 py-1 rounded-full font-semibold">
+                  {project.status}
+                </span>
 
-          {/* Card 2 - Portfolio v1 */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
-          >
-            <div className="h-36 bg-white border-b border-gray-100 flex items-center justify-between px-6">
-              <div>
-                <p className="text-3xl font-black text-blue-700 tracking-tight">Portfolio</p>
-                <p className="text-3xl font-black text-gray-900 tracking-tight">v1.0</p>
-              </div>
-              <div className="w-16 h-16 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center">
-                <span className="text-3xl">💼</span>
-              </div>
-              <div className="absolute top-4 right-4 bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full font-medium">Live</div>
-            </div>
-            <div className="p-5 space-y-3">
-              <h3 className="text-lg font-bold text-gray-900">Personal Portfolio — Version 1</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
-                My first professional portfolio website built before the official registration of Zeyhaan Tech Solution. Showcases my early projects and skills.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">HTML5</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">CSS3</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">JavaScript</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">Vercel</span>
-              </div>
-              <motion.a
-                href="https://zeyana-portfolio.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.97 }}
-                className="inline-flex items-center gap-2 bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-full"
-              >
-                <ExternalLink size={14} />
-                Live Demo
-              </motion.a>
-            </div>
-          </motion.div>
+                {/* Icon + category */}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-green-700 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Icon size={22} className="text-white" />
+                  </div>
+                  <span className="text-xs uppercase tracking-wide text-green-700 font-semibold">
+                    {project.category}
+                  </span>
+                </div>
 
-          {/* Card 3 - Mpendae */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
-          >
-            <div className="h-36 bg-white border-b border-gray-100 flex items-center justify-between px-6">
-              <div>
-                <p className="text-3xl font-black text-orange-600 tracking-tight">Mpendae</p>
-                <p className="text-3xl font-black text-gray-900 tracking-tight">School</p>
-              </div>
-              <div className="w-16 h-16 rounded-2xl bg-orange-50 border border-orange-100 flex items-center justify-center">
-                <span className="text-3xl">🏫</span>
-              </div>
-              <div className="absolute top-4 right-4 bg-orange-100 text-orange-600 text-xs px-3 py-1 rounded-full font-medium">Live</div>
-            </div>
-            <div className="p-5 space-y-3">
-              <h3 className="text-lg font-bold text-gray-900">Mpendae Secondary School Website</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
-                Official website for Mpendae Primary and Secondary School, Zanzibar — providing school information, announcements, and contact details.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">HTML5</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">CSS3</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">JavaScript</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full">Vercel</span>
-              </div>
-              <motion.a
-                href="https://mpendae-secondary-school.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.97 }}
-                className="inline-flex items-center gap-2 bg-orange-600 text-white text-sm font-medium px-4 py-2 rounded-full"
-              >
-                <ExternalLink size={14} />
-                Live Demo
-              </motion.a>
-            </div>
-          </motion.div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{project.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4 flex-1">
+                  {project.description}
+                </p>
 
+                <div className="flex flex-wrap gap-2 mb-5">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs bg-green-50 text-green-700 border border-green-100 px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
 
-          {/* Card 5 - Keysha Kids */}
-<motion.div
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.6, delay: 0.4 }}
-  className="relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
->
-  <div className="h-36 border-b border-gray-100 flex items-center justify-between px-6"
-    style={{ background: 'linear-gradient(135deg, #2D0060, #E91E8C)' }}>
-    <div>
-      <p className="text-3xl font-black text-white tracking-tight">Keysha</p>
-      <p className="text-3xl font-black text-pink-200 tracking-tight">Kids</p>
-    </div>
-    <div className="w-16 h-16 rounded-2xl bg-white/20 border border-white/30 flex items-center justify-center">
-      <span className="text-3xl">👗</span>
-    </div>
-    <div className="absolute top-4 right-4 bg-pink-100 text-pink-700 text-xs px-3 py-1 rounded-full font-medium">Live</div>
-  </div>
-  <div className="p-5 space-y-3">
-    <h3 className="text-lg font-bold text-gray-900">Keysha Kids Collection — Business System</h3>
-    <p className="text-gray-500 text-sm leading-relaxed">
-      A full-stack business management system for Keysha Kids Collection, Zanzibar. 
-      Features POS, inventory, debt tracking, sales reports, customer management, 
-      automated backups and role-based access control.
-    </p>
-    <div className="flex flex-wrap gap-2">
-      <span className="text-xs bg-pink-50 text-pink-700 border border-pink-100 px-3 py-1 rounded-full">React 18</span>
-      <span className="text-xs bg-pink-50 text-pink-700 border border-pink-100 px-3 py-1 rounded-full">Node.js</span>
-      <span className="text-xs bg-pink-50 text-pink-700 border border-pink-100 px-3 py-1 rounded-full">PostgreSQL</span>
-      <span className="text-xs bg-pink-50 text-pink-700 border border-pink-100 px-3 py-1 rounded-full">Prisma ORM</span>
-      <span className="text-xs bg-pink-50 text-pink-700 border border-pink-100 px-3 py-1 rounded-full">Railway</span>
-      <span className="text-xs bg-pink-50 text-pink-700 border border-pink-100 px-3 py-1 rounded-full">Vercel</span>
-    </div>
-    <motion.a
-      href="https://keyshakids.vercel.app"
-      target="_blank"
-      rel="noopener noreferrer"
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.97 }}
-      className="inline-flex items-center gap-2 text-white text-sm font-medium px-4 py-2 rounded-full"
-      style={{ background: 'linear-gradient(135deg, #7B2FBE, #E91E8C)' }}
-    >
-      <ExternalLink size={14} />
-      Live Demo
-    </motion.a>
-  </div>
-</motion.div>
+                <div className="flex flex-wrap gap-3">
+                  <motion.a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-sm font-medium px-4 py-2 rounded-full transition-colors duration-300"
+                  >
+                    <ExternalLink size={14} />
+                    Live Demo
+                  </motion.a>
 
-{/* Card 4 - Naoson */}
-<motion.div
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.6, delay: 0.4 }}
-  className="relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
->
-  <div className="h-36 border-b border-gray-100 flex items-center justify-between px-6"
-    style={{ background: 'linear-gradient(135deg, #7a5200, #b8860b)' }}>
-    <div>
-      <p className="text-3xl font-black text-white tracking-tight">Naoson's</p>
-      <p className="text-3xl font-black text-yellow-200 tracking-tight">Collections</p>
-    </div>
-    <div className="w-16 h-16 rounded-2xl bg-white/20 border border-white/30 flex items-center justify-center">
-      <span className="text-3xl">🏺</span>
-    </div>
-    <div className="absolute top-4 right-4 bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full font-medium">Live</div>
-  </div>
-  <div className="p-5 space-y-3">
-    <h3 className="text-lg font-bold text-gray-900">Naoson's Collections — Mfumo wa Duka</h3>
-    <p className="text-gray-500 text-sm leading-relaxed">
-      A full-stack POS and business management system for Naoson's Collections — a real client in Zanzibar.
-      Features inventory management, sales tracking, profit reports, stock alerts, receipt printing, Excel/PDF export, backup & restore, and secure login.
-    </p>
-    <div className="flex flex-wrap gap-2">
-      <span className="text-xs px-3 py-1 rounded-full border" style={{ background: '#fff3dc', color: '#b8860b', borderColor: '#e8d5a3' }}>Next.js 16</span>
-      <span className="text-xs px-3 py-1 rounded-full border" style={{ background: '#fff3dc', color: '#b8860b', borderColor: '#e8d5a3' }}>Tailwind CSS</span>
-      <span className="text-xs px-3 py-1 rounded-full border" style={{ background: '#fff3dc', color: '#b8860b', borderColor: '#e8d5a3' }}>SQLite/Turso</span>
-      <span className="text-xs px-3 py-1 rounded-full border" style={{ background: '#fff3dc', color: '#b8860b', borderColor: '#e8d5a3' }}>Vercel</span>
-      <span className="text-xs px-3 py-1 rounded-full border" style={{ background: '#fff3dc', color: '#b8860b', borderColor: '#e8d5a3' }}>JWT Auth</span>
-    </div>
-    <motion.a
-      href="https://naoson.vercel.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.97 }}
-      className="inline-flex items-center gap-2 text-white text-sm font-medium px-4 py-2 rounded-full"
-      style={{ background: 'linear-gradient(135deg, #7a5200, #b8860b)' }}
-    >
-      <ExternalLink size={14} />
-      Live Demo
-    </motion.a>
-  </div>
-</motion.div>
+                  {project.videoUrl && (
+                    <motion.a
+                      href={project.videoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.97 }}
+                      className="inline-flex items-center gap-2 bg-white border border-green-200 text-green-700 hover:bg-green-50 text-sm font-medium px-4 py-2 rounded-full transition-colors duration-300"
+                    >
+                      <Youtube size={14} />
+                      Watch Demo
+                    </motion.a>
+                  )}
+                </div>
+              </motion.div>
+            );
+          })}
 
           {/* More Coming */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
             className="md:col-span-2 bg-gray-50 border border-dashed border-gray-200 rounded-2xl p-8 flex flex-col items-center justify-center text-center space-y-4"
           >
             <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
