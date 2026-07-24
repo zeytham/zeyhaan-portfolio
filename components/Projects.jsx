@@ -16,7 +16,7 @@ const projects = [
   {
     icon: Briefcase,
     category: "Personal Portfolio",
-    title: "Personal Portfolio — Version 1",
+    title: "Personal Portfolio",
     description:
       "My first professional portfolio website built before the official registration of Zeyhaan Tech Solution. Showcases my early projects and skills.",
     tags: ["HTML5", "CSS3", "JavaScript", "Vercel"],
@@ -28,7 +28,7 @@ const projects = [
     category: "School Website",
     title: "Mpendae Secondary School Website",
     description:
-      "Official website for Mpendae Primary and Secondary School, Zanzibar — providing school information, announcements, and contact details.",
+      "Official website for Mpendae Primary and Secondary School, Zanzibar. It providing school information, announcements and contact details.",
     tags: ["HTML5", "CSS3", "JavaScript", "Vercel"],
     liveUrl: "https://mpendae-secondary-school.vercel.app/",
     status: "Live",
@@ -36,7 +36,7 @@ const projects = [
   {
     icon: ShoppingBag,
     category: "Business System",
-    title: "Keysha Kids Collection — Business System",
+    title: "Keysha Kids Collection System",
     description:
       "A full-stack business management system for Keysha Kids Collection, Zanzibar. Features POS, inventory, debt tracking, sales reports, customer management, automated backups and role-based access control.",
     tags: ["React 18", "Node.js", "PostgreSQL", "Prisma ORM", "Railway", "Vercel"],
@@ -46,9 +46,9 @@ const projects = [
   {
     icon: Store,
     category: "Business System",
-    title: "Naoson's Collections — Mfumo wa Duka",
+    title: "Naoson's Collections",
     description:
-      "A full-stack POS and business management system for Naoson's Collections — a real client in Zanzibar. Features inventory management, sales tracking, profit reports, stock alerts, receipt printing, Excel/PDF export, backup & restore, and secure login.",
+      "A full-stack POS and business management system for Naoson's Collections. Features inventory management, sales tracking, profit reports, stock alerts, receipt printing, Excel/PDF export, backup & restore and secure login.",
     tags: ["Next.js 16", "Tailwind CSS", "SQLite/Turso", "Vercel", "JWT Auth"],
     liveUrl: "https://naoson.vercel.app/",
     status: "Live",
@@ -56,9 +56,9 @@ const projects = [
   {
     icon: MapPin,
     category: "Tourism Platform",
-    title: "Zebra Costa — Discover the Magic of Zanzibar",
+    title: "Zebra Costa",
     description:
-      "A full-stack tourism platform showcasing Zanzibar's hotels, restaurants, and tour packages — built with an admin panel for managing listings, bookings, and content.",
+      "A full-stack tourism platform showcasing Zanzibar's hotels, restaurants and tour packages. It built with an admin panel for managing listings, bookings and content.",
     tags: ["Next.js 14", "Express", "Prisma", "PostgreSQL", "Vercel", "Railway"],
     liveUrl: "https://tanzania-tourism-platform.vercel.app/",
     status: "Live",
@@ -68,7 +68,7 @@ const projects = [
     category: "Security Tool",
     title: "Message Digest Calculator",
     description:
-      "A cryptographic tool that computes and compares hash digests of messages — built to demonstrate hash function properties like preimage resistance and collision detection.",
+      "A cryptographic tool that computes and compares hash digests of messages. It built to demonstrate hash function properties like preimage resistance and collision detection.",
     tags: ["Cryptography", "Hashing", "Web App", "Railway"],
     liveUrl: "https://message-digest-calculator-production.up.railway.app/",
     videoUrl: "https://youtu.be/f0RCJNSpoYE",
@@ -89,11 +89,11 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-xs text-green-600 tracking-widest uppercase font-medium mb-2">My Work</p>
+          <p className="text-xs text-green-600 tracking-widest uppercase font-medium mb-2">Our Work</p>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Projects</h2>
           <div className="w-16 h-1 bg-green-600 mx-auto rounded-full" />
           <p className="text-gray-500 mt-6 max-w-xl mx-auto leading-relaxed">
-            Real-world projects built with passion, precision, and purpose.
+            Real-world projects built with passion, precision and purpose.
           </p>
         </motion.div>
 
@@ -186,7 +186,7 @@ export default function Projects() {
             </div>
             <h3 className="text-lg font-semibold text-gray-700">More Projects Coming</h3>
             <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
-              I am continuously building new solutions. Check back soon — Bi idhnillah.
+               Zeyhaan Tec Solution  continuously building new solutions. Check back soon In Shaa Allah.
             </p>
           </motion.div>
 
