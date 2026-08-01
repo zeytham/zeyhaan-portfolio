@@ -56,9 +56,9 @@ export default function Team() {
               Founder and CEO of Zeyhaan Tech Solution, responsible for business analysis, solution planning, software development, project leadership and strategic direction. Works closely with clients to understand their needs and transform real-world challenges into practical and impactful digital solutions.
               </p>
               <div className="flex gap-2 pt-1">
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-2 py-1 rounded-full">Business Analysis</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-2 py-1 rounded-full">Development</span>
-                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-2 py-1 rounded-full">Project Leadership</span>
+                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-2 py-1 rounded-full">Business Analyst</span>
+                <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-2 py-1 rounded-full">Project manager</span>
+                
                 <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-2 py-1 rounded-full">Strategy</span>
               </div>
             </div>
@@ -94,8 +94,7 @@ export default function Team() {
                 A dedicated and detail-oriented software developer responsible for building and supporting digital solutions at Zeyhaan Tech Solution. He also serves as the company's spokesperson, representing the company in communications and helping to connect the team with clients, partners and the wider community.
               </p>
               <div className="flex flex-wrap gap-2 pt-1">
-                <span className="text-xs bg-blue-50 text-blue-700 border border-blue-100 px-2 py-1 rounded-full">Coding</span>
-                <span className="text-xs bg-blue-50 text-blue-700 border border-blue-100 px-2 py-1 rounded-full">Systems</span>
+                <span className="text-xs bg-blue-50 text-blue-700 border border-blue-100 px-2 py-1 rounded-full">developer</span>
                 <span className="text-xs bg-blue-50 text-blue-700 border border-blue-100 px-2 py-1 rounded-full">Communication</span>
               </div>
             </div>
@@ -126,14 +125,13 @@ export default function Team() {
             </div>
             <div className="p-5 space-y-2">
               <h3 className="font-bold text-gray-900">Omar Nassor Omar</h3>
-              <p className="text-xs text-purple-700 font-medium">Full Stack Developer & Marketing</p>
+              <p className="text-xs text-purple-700 font-medium">Full Stack Develope</p>
               <p className="text-xs text-gray-500 leading-relaxed">
                 A versatile team member serving as Assistant CEO and software development. Helps bridge technology and business while supporting the company's operations, growth and strategic initiatives.
               </p>
               <div className="flex flex-wrap gap-2 pt-1">
                 <span className="text-xs bg-purple-50 text-purple-700 border border-purple-100 px-2 py-1 rounded-full">Assistant CEO</span>
-                <span className="text-xs bg-purple-50 text-purple-700 border border-purple-100 px-2 py-1 rounded-full">Coding</span>
-                <span className="text-xs bg-purple-50 text-purple-700 border border-purple-100 px-2 py-1 rounded-full">Marketing</span>
+                <span className="text-xs bg-purple-50 text-purple-700 border border-purple-100 px-2 py-1 rounded-full">developer</span>
               
               </div>
             </div>
