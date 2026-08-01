@@ -125,7 +125,7 @@ export default function Team() {
             </div>
             <div className="p-5 space-y-2">
               <h3 className="font-bold text-gray-900">Omar Nassor Omar</h3>
-              <p className="text-xs text-purple-700 font-medium">Full Stack Develope</p>
+              <p className="text-xs text-purple-700 font-medium">Full Stack Developer</p>
               <p className="text-xs text-gray-500 leading-relaxed">
                 A versatile team member serving as Assistant CEO and software development. Helps bridge technology and business while supporting the company's operations, growth and strategic initiatives.
               </p>
